@@ -1,8 +1,8 @@
 # Bardscan IIs – Teardown and Repair Notes
 
-<img src="/images/bardscan-iis-1.jpg" width="900" />
+<img src="/img/bardscan-iis-1.jpg" width="900" />
 
-<img src="/images/bardscan-iis-2.jpg" width="900" />
+<img src="/img/bardscan-iis-2.jpg" width="900" />
 
 ## Background
 
@@ -10,9 +10,9 @@ The Bardscan IIs is a portable 2D [mechanical sector](https://link.springer.com/
 
 The device was originally designed by Mediwatch PLC and released as the [Mediwatch Portascan](./pdf/mediwatch%20portascan%20-%20brochure.pdf), later upgrade to the Portascan+:
 
-<img src="/images/mediwatch-portascan-1.jpg" width="900" />
+<img src="/img/mediwatch-portascan-1.jpg" width="900" />
 
-<img src="/images/mediwatch-portascan-2.jpg" width="900" />
+<img src="/img/mediwatch-portascan-2.jpg" width="900" />
 
 In 2008, Bard released a relabeled version as the [Bardscan II](./pdf/bardscan-iis-brochure.pdf). GE also released a relabeled version as the [GE Portascan](./pdf/ge%20portascan%20-%20user%20manual.pdf).
 
@@ -31,37 +31,37 @@ The differences between the Bardscan II and the Bardscan IIs are not clear. [Thi
 
 The main PCB, labeled "Mediwatch Portascan OMAP Issue 6":
 
-<img src="/images/bardscan-iis-3.jpg" width="900" />
+<img src="/img/bardscan-iis-3.jpg" width="900" />
 
-<img src="/images/bardscan-iis-4.jpg" width="900" />
+<img src="/img/bardscan-iis-4.jpg" width="900" />
 
-<img src="/images/bardscan-iis-5.jpg" width="900" />
+<img src="/img/bardscan-iis-5.jpg" width="900" />
 
 The touchscreen display is an [AU Optronics G084SN05-V9](./pdf/au%20optronics%20g084sn05-v9%20-%20datasheet.pdf):
 
-<img src="/images/bardscan-iis-6.jpg" width="900" />
+<img src="/img/bardscan-iis-6.jpg" width="900" />
 
-<img src="/images/bardscan-iis-7.jpg" width="900" />
+<img src="/img/bardscan-iis-7.jpg" width="900" />
 
 The thermal printer PCB, labeled "Mediwatch Portascan+ Printer":
 
-<img src="/images/bardscan-iis-8.jpg" width="900" />
+<img src="/img/bardscan-iis-8.jpg" width="900" />
 
 The thermal printer is a [Fujitsu FTP-628MCL054](./pdf/fujitsu%20ftp-628mcl054%20-%20datasheet.pdf):
 
 The ultrasound probe connects via a 16-pin [LEMO PFG.2B connector](https://www.lemo.com/int_en/solutions/originals/b-indoor-keyed.html):
 
-<img src="/images/bardscan-iis-9.jpg" width="900" />
+<img src="/img/bardscan-iis-9.jpg" width="900" />
 
-<img src="/images/bardscan-iis-10.jpg" width="900" />
+<img src="/img/bardscan-iis-10.jpg" width="900" />
 
-<img src="/images/bardscan-iis-11.jpg" width="900" />
+<img src="/img/bardscan-iis-11.jpg" width="900" />
 
 Which terminates at the PCB:
 
-<img src="/images/bardscan-iis-12.jpg" width="900" />
+<img src="/img/bardscan-iis-12.jpg" width="900" />
 
-<img src="/images/bardscan-iis-13.jpg" width="900" />
+<img src="/img/bardscan-iis-13.jpg" width="900" />
 
 ---
 
@@ -71,20 +71,20 @@ My ultrasound probe was not activating during a scan. The motor was not running 
 
 An x-ray of the probes did not reveal any clear mechanical problem:
 
-<img src="/images/bardscan-iis-14.jpg" width="900" />
+<img src="/img/bardscan-iis-14.jpg" width="900" />
 
-<img src="/images/bardscan-iis-15.jpg" width="900" />
+<img src="/img/bardscan-iis-15.jpg" width="900" />
 
-<img src="/images/bardscan-iis-16.jpg" width="900" />
+<img src="/img/bardscan-iis-16.jpg" width="900" />
 
-<img src="/images/bardscan-iis-17.jpg" width="900" />
+<img src="/img/bardscan-iis-17.jpg" width="900" />
 
 
 Two chips were overheating:
 
-<img src="/images/bardscan-iis-18.jpg" width="480" />
+<img src="/img/bardscan-iis-18.jpg" width="480" />
 
-<img src="/images/bardscan-iis-19.jpg" width="480" />
+<img src="/img/bardscan-iis-19.jpg" width="480" />
 
 | Ref | Part | Function |
 |-----|------|----------|
@@ -95,7 +95,7 @@ Testing Q5 revealed it was blown. Replacing Q5 eliminated the overheating proble
 
 After a lot of oscilloscope and multimeter probing, the rough layout of the PCB becomes clear:
 
-<img src="/images/bardscan-iis-20.jpg" width="900" />
+<img src="/img/bardscan-iis-20.jpg" width="900" />
 
 After investigation, more parts needed replacing:
 
