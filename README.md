@@ -8,7 +8,7 @@
 
 The Bardscan IIs is a portable 2D [mechanical sector](https://link.springer.com/chapter/10.1007/978-94-010-1103-7_29) [B-mode](https://assets.cambridge.org/97805217/57102/excerpt/9780521757102_excerpt.pdf) ultrasound intended for measuring bladder volume. 
 
-The device was originally designed by Mediwatch PLC and released as the [Mediwatch Portascan](./pdf/mediwatch%20portascan%20-%20brochure.pdf), later upgrade to the Portascan+:
+The device was originally designed by Mediwatch PLC and released as the [Mediwatch Portascan](./pdf/mediwatch%20portascan%20-%20brochure.pdf), later upgraded to the Portascan+:
 
 <img src="/img/mediwatch-portascan-1.jpg" width="900" />
 
@@ -113,6 +113,6 @@ After replacement, signals were checked higher up the signal path:
 |-----|------|----------|
 | U6 | MD1213 high-speed dual MOSFET driver | High-voltage gate driver for U7 |
 
-These signals looked good, everything was put back together, and the probes were working again.
+The important signals (INA, INB, OUTA, OUTB, OE) looked good, everything was put back together, and the probes were working again.
 
 ---
