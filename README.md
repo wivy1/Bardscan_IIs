@@ -104,7 +104,7 @@ After investigation, more parts needed replacing:
 | Ref | Part | Function |
 |-----|------|----------|
 | U7 | TC6320TG-G high-voltage complementary MOSFET pair (1x N channel, 1x P-channel) | Ultrasound output switch |
-| U8 | LM5112 MOSFET | high-voltage enable gate |
+| U8 | LM5112 MOSFET | High-voltage enable gate |
 | D5 and D6 | Schottky diode | Shapes the high-voltage rail and protects the pulser |
 
 After replacement, signals were checked higher up the signal path:
