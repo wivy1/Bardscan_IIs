@@ -96,6 +96,9 @@ After a lot of oscilloscope and multimeter probing, the rough layout of the PCB 
 
 <img src="/img/bardscan-iis-20.jpg" width="900" />
 
+The left-hand block handles power conversion and generates the +/- 100V rails used by the pulser.
+The right-hand block handles the probe TX/RX.
+
 After investigation, more parts needed replacing:
 
 | Ref | Part | Function |
