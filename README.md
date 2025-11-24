@@ -79,7 +79,6 @@ An x-ray of the probes did not reveal any clear mechanical problem:
 
 <img src="/img/bardscan-iis-17.jpg" width="900" />
 
-
 Two chips were overheating:
 
 <img src="/img/bardscan-iis-18.jpg" width="480" />
@@ -88,8 +87,8 @@ Two chips were overheating:
 
 | Ref | Part | Function |
 |-----|------|----------|
-| U30 | LT3481 buck regulator (MSOP-10) | |
-| Q5 | ZXMN10A08E6TA MOSFET N-CH 100V 1.5A (SOT26) | |
+| U30 | LT3481 step-down switching regulator | Generates a low voltage rail used for the pulser |
+| Q5 | ZXMN10A08E6TA N-Channel MOSFET N-CH 100V 1.5A | Driven by U8, drain goes to D7, acts as high-voltage enable when a probe is present |
 
 Testing Q5 revealed it was blown. Replacing Q5 eliminated the overheating problem, but the probes were still not activating.
 
@@ -101,18 +100,16 @@ After investigation, more parts needed replacing:
 
 | Ref | Part | Function |
 |-----|------|----------|
-| U7 |  | |
-| U8 |  | |
-| D5 |  | |
-| D6 |  | |
+| U7 | TC6320TG-G high-voltage complementary MOSFET pair (1x N channel, 1x P-channel) | Ultrasound output switch |
+| U8 | LM5112 MOSFET | high-voltage enable gate |
+| D5 and D6 | Schottky diode | Shapes the high-voltage rail and protects the pulser |
 
 After replacement, signals were checked higher up the signal path:
 
 | Ref | Part | Function |
 |-----|------|----------|
-| U6 |  | |
+| U6 | MD1213 high-speed dual MOSFET driver | High-voltage gate driver for U7 |
 
 These signals looked good, everything was put back together, and the probes were working again.
-
 
 ---
